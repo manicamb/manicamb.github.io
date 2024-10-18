@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Coches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Estilos para las miniaturas */
+        .thumbnail {
+            width: 150px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            transition: transform 0.2s ease;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Galería de Coches</h1>
+
+    <div class="gallery">
+        <!-- JPEG Images con texto alternativo -->
+        <img src="mustang1.jpeg" alt="Coche deportivo rojo" title="Coche deportivo rojo en carretera">
+        <img src="mustang2.jpeg" alt="Coche clásico azul" title="Coche clásico azul estacionado">
+
+        <!-- PNG Images con texto alternativo -->
+        <img src="suv1.png" alt="Coche SUV en la naturaleza" title="Coche SUV en la naturaleza">
+        
+
+        <!-- Imágenes como enlaces -->
+        <a href="https://es.motor1.com/news/554902/ford-mustang-shelby-american-gt500kr/" target="_blank">
+            <img src="azul.png" alt="Coche convertible" title="Clic para más información sobre el coche convertible">
+        </a>
+    </div>
+
+    <h2 style="text-align:center">Miniaturas de Coches</h2>
+    <div class="gallery">
+        <!-- Miniaturas, con enlaces a las versiones en tamaño completo -->
+        <a href="rojo.png" target="_blank">
+            <img src="rojo.png" alt="Miniatura de coche deportivo rojo" class="thumbnail">
+        </a>
+        <a href="mustang3.gif" target="_blank">
+            <img src="mustang3.gif" target="_blank" alt="Miniatura de gif mustang amarillo" class="thumbnail">
+        </a>
+    </div>
+
+</body>
+</html>
